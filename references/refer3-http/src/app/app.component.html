@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+조회하고싶은 아이디 : <input type="text" #id/>
+<button (click)="findMember(id.value)">조회</button>
+<br>
+조회한 사람의 이름은  {{memberName}} 입니다.
+
+<hr>
+사람 쓰기
+<input type="text" #newMember/>
+<button (click)="addMember(newMember.value)">쓰기</button>
+
+
