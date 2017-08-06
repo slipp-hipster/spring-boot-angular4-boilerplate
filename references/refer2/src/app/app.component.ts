@@ -21,6 +21,11 @@ export class AppComponent {
   // 양방향 바인딩
   way2 = "way2..";
 
+  // 폼
+  clickForm(name: string, pass: string): void{
+    alert("이름 : "+name + "\n"+"패스 : "+pass);
+  }
+
 
 
 }

@@ -1,18 +1,30 @@
 
-<h1>기초적인 단방향 : 삽입식 바인딩</h1>
+<h1>01. 기초적인 단방향 : 삽입식 바인딩</h1>
 <div>{{title}}</div>
 
 
-<h1>프로퍼티 바인딩</h1>
+<h1>02. 프로퍼티 바인딩</h1>
 <div [ngStyle]="myStyle">스타일 적용된 CSS</div>
 
 
-<h1>이벤트 바인딩</h1>
+<h1>03. 이벤트 바인딩</h1>
 <div>이벤트 바인딩의 예  (click)="evtBinding()" :
   <button (click)="evtBinding()">버튼입니당.</button>
 </div>
 
-<h1>양방향 바인딩</h1>
+<h1>04. 양방향 바인딩</h1>
 <div>
   <input type="text" [(ngModel)]="way2" /> , 결과 : {{way2}}
+</div>
+
+<hr>
+
+<h1>05. 폼</h1>
+<div>
+  <form>
+    <input type="text" #name /> <br>
+    <input type="password" #pass />
+    <input type="submit" (click)="clickForm(name.value, pass.value);
+                            name.value=''; pass.value=''; "/>
+  </form>
 </div>
